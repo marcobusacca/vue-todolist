@@ -72,7 +72,7 @@ SOLUZIONE:
 
     - Definire la Funzione addTask in JavaScript:
 
-        - SE l'utente non ha inserito una stringa vuota, ALLORA:
+        - SE l'utente NON ha inserito una stringa vuota, ALLORA:
 
             - creare un Nuovo Oggetto, con le proprietà text(newTask) e done(false);
 
