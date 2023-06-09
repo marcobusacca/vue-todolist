@@ -79,3 +79,29 @@ SOLUZIONE:
             - Pushare il Nuovo Oggetto nell'Array "tasks";
 
             - Resettare la Variabile newTask.
+
+
+BONUS:
+
+Aggiungere la funzionalità di Edit della Task.
+
+
+SOLUZIONE:
+
+- Aggiungere nel DOM HTML l'Edit Button;
+
+- Aggiungere ad ogni Oggetto dell'Array "tasks" la proprietà editEnabled : false;
+
+- Dividere il tasks.text HTML in due DIV:
+
+    - Usare nel primo DIV la direttiva v-if="tasks.editEnabled" ed inserire nel primo DIV un campo di input:
+
+    - Monitorare quello che scrive l'utente nel campo di input con v-model="task.text";
+
+    - Usare v-on:keyup.enter sull'input per Richiamare la Funzione = editTask(index);
+
+    - Usare nel secondo DIV la direttiva v-else e v-text="task.text";
+
+- Usare v-on:click sull'Edit Button per Richiamare la Funzione = editTask(index);
+
+- Definire la Funzione editTask(index).
