@@ -52,7 +52,7 @@
                             <!-- Todo Unordered List -->
                             <ul class="list-unstyled">
                                 <!-- Container All Task Cancelled Title -->
-                                <div>
+                                <div v-if="tasks.length === 0">
                                     <h4 class="text-center">Non ci sono Task</h4>
                                 </div>
                                 <!-- Task List Item -->
