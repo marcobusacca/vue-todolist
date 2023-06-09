@@ -52,5 +52,10 @@ createApp({
     // FUNZIONE METHODS
     methods:{
 
+        // QUANDO L'UTENTE CLICCA SUL "CHECKED BUTTON", ASSEGNO ALL'ATTRIBUTO DONE DELL'ELEMENTO CLICCATO IL SUO OPPOSTO
+        changeTaskDone(index){
+            this.tasks[index].done = !this.tasks[index].done
+        }
+
     }
 }).mount('#app'); // COLLEGO L'APP VUE.JS AL DOM HTML

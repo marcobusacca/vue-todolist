@@ -62,7 +62,7 @@
                                     <!-- Task Buttons -->
                                     <div>
                                         <!-- Checked Button -->
-                                        <button class="btn btn-sm btn-success mx-1" :class=" task.done ? 'btn-dark' : 'btn-success' ">
+                                        <button class="btn btn-sm btn-success mx-1" :class=" task.done ? 'btn-dark' : 'btn-success' " @click="changeTaskDone(index)">
                                             <i class="fas" :class=" task.done ? 'fa-x' : 'fa-check' "></i>
                                         </button>
                                         <!-- Delete Button -->
