@@ -58,7 +58,14 @@
                                 <!-- Task List Item -->
                                 <li class="d-flex justify-content-between" v-for="(task, index) in tasks">
                                     <!-- Task Title -->
-                                    <div v-text="task.text" :class=" task.done ? 'task_done' : '' "></div>
+                                    <div :class=" task.done ? 'task_done' : '' ">
+                                        <!-- Task Input Edit Enabled -->
+                                        <div v-if="task.editEnabled">
+                                            <input type="text" placeholder="Modifica Task" name="edit_task" id="edit_task" v-model="task.text" @keyup.enter="editTask(index)">
+                                        </div>
+                                        <!-- Task Text Edit Disabled -->
+                                        <div v-else v-text="task.text"></div>
+                                    </div>
                                     <!-- Task Buttons -->
                                     <div>
                                         <!-- Checked Button -->
@@ -66,7 +73,7 @@
                                             <i class="fas" :class=" task.done ? 'fa-x' : 'fa-check' "></i>
                                         </button>
                                         <!-- Edit Button -->
-                                        <button class="btn btn-sm btn-warning mx-1">
+                                        <button class="btn btn-sm btn-warning mx-1" @click="editTask(index)">
                                             <i class="fas fa-edit"></i>
                                         </button>
                                         <!-- Delete Button -->
