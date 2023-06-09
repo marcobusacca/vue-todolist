@@ -92,7 +92,7 @@ SOLUZIONE:
 
 - Aggiungere ad ogni Oggetto dell'Array "tasks" la proprietà editEnabled : false;
 
-- Dividere il tasks.text HTML in due DIV:
+- Dividere il Task Title HTML in due DIV:
 
     - Usare nel primo DIV la direttiva v-if="tasks.editEnabled" ed inserire nel primo DIV un campo di input:
 
