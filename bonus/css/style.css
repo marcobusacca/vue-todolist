@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(180, 180, 180);
+}
+
+/* CONTENT ROW */
+    .content{
+        width: 75%;
+        margin: 0 auto;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 0 20px;
+    }
+
+    /* TODO UNORDERED LIST */
+    ul.list-unstyled li{
+        padding: 15px 0;
+        border-bottom: 1px solid rgb(180, 180, 180);
+    }
+
+    /* TASK DONE */
+    .task_done{
+        text-decoration: line-through;
+    }
+
+    /* INPUT CONTENT */
+    .input{
+        width: 100%;
+    }
+
+    .input_text{
+        width: calc(100% - 125px);
+        margin-right: 25px;
+    }
+
+    .input_text #input_task{
+        width: 100%;
+        padding: 2px 10px;
+    }
+
+    .input_button{
+        width: 100px;
+    }
+
+    .input_button span{
+        margin-left: 4px;
+    }
+/* FINE CONTENT ROW */
