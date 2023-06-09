@@ -16,32 +16,32 @@ createApp({
             // ARRAY TASKS CON OGGETTI TASK
             tasks : [
                 {
-                    text : 'Fare la spesa 1',
+                    text : 'Task 1',
                     done : false
                 },
 
                 {
-                    text : 'Fare la spesa 2',
+                    text : 'Task 2',
                     done : false
                 },
 
                 {
-                    text : 'Fare la spesa 3',
+                    text : 'Task 3',
                     done : false
                 },
 
                 {
-                    text : 'Fare la spesa 4',
+                    text : 'Task 4',
                     done : false
                 },
 
                 {
-                    text : 'Fare la spesa 5',
+                    text : 'Task 5',
                     done : false
                 },
 
                 {
-                    text : 'Fare la spesa 6',
+                    text : 'Task 6',
                     done : false
                 },
             ],
