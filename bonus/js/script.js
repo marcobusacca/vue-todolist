@@ -79,6 +79,14 @@ createApp({
                 // RESETTO LA VARIABILE NEW_TASK
                 this.newTask = '';
             }
+        },
+
+        // QUANDO L'UTENTE CLICCA SULL' "EDIT BUTTON", ASSEGNO ALL'ATTRIBUTO EDIT_ENABLED DELL'ELEMENTO CLICCATO IL SUO OPPOSTO
+        editTask(index){
+            // CONTROLLO CHE L'UTENTE NON ABBIA LASCIATO IL TESTO VUOTO
+            if (this.tasks[index].text !== ''){
+                this.tasks[index].editEnabled = !this.tasks[index].editEnabled;
+            }
         }
     }
 }).mount('#app'); // COLLEGO L'APP VUE.JS AL DOM HTML
