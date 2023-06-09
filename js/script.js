@@ -49,12 +49,12 @@ createApp({
 
         // QUANDO L'UTENTE CLICCA SUL "CHECKED BUTTON", ASSEGNO ALL'ATTRIBUTO DONE DELL'ELEMENTO CLICCATO IL SUO OPPOSTO
         changeTaskDone(index){
-            this.tasks[index].done = !this.tasks[index].done
+            this.tasks[index].done = !this.tasks[index].done;
         },
 
         // QUANDO L'UTENTE CLICCA SUL "DELETE BUTTON", CANCELLO DALL'ARRAY "TASKS" L'OGGETTO CON L'INDICE CLICCATO
         deleteTask(index){
-            this.tasks.splice(index, 1)
+            this.tasks.splice(index, 1);
         },
 
         // QUANDO L'UTENTE CLICCA SULL' "ADD BUTTON", AGGIUNGO ALL'ARRAY "TASKS" IL NUOVO OGGETTO
