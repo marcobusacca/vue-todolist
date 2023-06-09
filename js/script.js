@@ -17,38 +17,32 @@ createApp({
             tasks : [
                 {
                     text : 'Fare la spesa 1',
-                    done : false,
-                    editEnabled : false
+                    done : false
                 },
 
                 {
                     text : 'Fare la spesa 2',
-                    done : false,
-                    editEnabled : false
+                    done : false
                 },
 
                 {
                     text : 'Fare la spesa 3',
-                    done : false,
-                    editEnabled : false
+                    done : false
                 },
 
                 {
                     text : 'Fare la spesa 4',
-                    done : false,
-                    editEnabled : false
+                    done : false
                 },
 
                 {
                     text : 'Fare la spesa 5',
-                    done : false,
-                    editEnabled : false
+                    done : false
                 },
 
                 {
                     text : 'Fare la spesa 6',
-                    done : false,
-                    editEnabled : false
+                    done : false
                 },
             ],
 
