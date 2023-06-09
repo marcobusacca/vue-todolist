@@ -16,28 +16,33 @@ createApp({
             // ARRAY TASKS CON OGGETTI TASK
             tasks : [
                 {
-                    text : 'Task 1',
-                    done : false
+                    text        : 'Task 1',
+                    done        : false,
+                    editEnabled : false
                 },
 
                 {
-                    text : 'Task 2',
-                    done : false
+                    text        : 'Task 2',
+                    done        : false,
+                    editEnabled : false
                 },
 
                 {
-                    text : 'Task 3',
-                    done : false
+                    text        : 'Task 3',
+                    done        : false,
+                    editEnabled : false
                 },
 
                 {
-                    text : 'Task 4',
-                    done : false
+                    text        : 'Task 4',
+                    done        : false,
+                    editEnabled : false
                 },
 
                 {
-                    text : 'Task 5',
-                    done : false
+                    text        : 'Task 5',
+                    done        : false,
+                    editEnabled : false
                 },
             ],
 
@@ -63,8 +68,9 @@ createApp({
             if (this.newTask !== ''){
                 // DICHIARO LA VARIABILE CONTENENTE IL NUOVO OGGETTO
                 let object = {
-                    text : this.newTask,
-                    done : false
+                    text        : this.newTask,
+                    done        : false,
+                    editEnabled : false
                 };
 
                 // PUSHO DENTRO L'ARRAY "TASKS" IL NUOVO OGGETTO
