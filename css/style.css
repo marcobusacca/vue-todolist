@@ -48,4 +48,8 @@ body{
     .input_button{
         width: 100px;
     }
+
+    .input_button span{
+        margin-left: 4px;
+    }
 /* FINE CONTENT ROW */
