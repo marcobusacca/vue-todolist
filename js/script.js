@@ -8,11 +8,55 @@ createApp({
     // FUNZIONE DATA CON OGGETTO RETURN
     data(){
         return{
+            // DEFINIZIONE VARIABILI VUE.JS
 
+            appTitle            :   'Vue Toboolist',
+            appContentTitle     :   'La mia todolist',
+
+            // ARRAY TASKS CON OGGETTI TASK
+            tasks : [
+                {
+                    text : 'Fare la spesa 1',
+                    done : false,
+                    editEnabled : false
+                },
+
+                {
+                    text : 'Fare la spesa 2',
+                    done : false,
+                    editEnabled : false
+                },
+
+                {
+                    text : 'Fare la spesa 3',
+                    done : false,
+                    editEnabled : false
+                },
+
+                {
+                    text : 'Fare la spesa 4',
+                    done : false,
+                    editEnabled : false
+                },
+
+                {
+                    text : 'Fare la spesa 5',
+                    done : false,
+                    editEnabled : false
+                },
+
+                {
+                    text : 'Fare la spesa 6',
+                    done : false,
+                    editEnabled : false
+                },
+            ],
+
+            newTask : '',
         }
     },
     // FUNZIONE METHODS
     methods:{
-        
+
     }
 }).mount('#app'); // COLLEGO L'APP VUE.JS AL DOM HTML
