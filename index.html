@@ -58,7 +58,7 @@
                                 <!-- Task List Item -->
                                 <li class="d-flex justify-content-between" v-for="(task, index) in tasks">
                                     <!-- Task Title -->
-                                    <div v-text="task.text"></div>
+                                    <div v-text="task.text" :class=" task.done ? 'task_done' : '' "></div>
                                     <!-- Task Buttons -->
                                     <div>
                                         <!-- Checked Button -->
