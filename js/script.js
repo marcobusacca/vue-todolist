@@ -39,11 +39,6 @@ createApp({
                     text : 'Task 5',
                     done : false
                 },
-
-                {
-                    text : 'Task 6',
-                    done : false
-                },
             ],
 
             newTask : '',
@@ -61,5 +56,23 @@ createApp({
         deleteTask(index){
             this.tasks.splice(index, 1)
         },
+
+        // QUANDO L'UTENTE CLICCA SULL' "ADD BUTTON", AGGIUNGO ALL'ARRAY "TASKS" IL NUOVO OGGETTO
+        addTask(){
+            // CONTROLLO CHE L'UTENTE NON ABBIA LASCIATO IL TESTO VUOTO
+            if (this.newTask !== ''){
+                // DICHIARO LA VARIABILE CONTENENTE IL NUOVO OGGETTO
+                let object = {
+                    text : this.newTask,
+                    done : false
+                };
+
+                // PUSHO DENTRO L'ARRAY "TASKS" IL NUOVO OGGETTO
+                this.tasks.push(object);
+
+                // RESETTO LA VARIABILE NEW_TASK
+                this.newTask = '';
+            }
+        }
     }
 }).mount('#app'); // COLLEGO L'APP VUE.JS AL DOM HTML

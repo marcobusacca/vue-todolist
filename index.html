@@ -76,11 +76,11 @@
                             <div class="input d-flex">
                                 <div class="input_text">
                                     <!-- Input Text -->
-                                    <input type="text" placeholder="Aggiungi Task" name="new_task" id="input_task">
+                                    <input type="text" placeholder="Aggiungi Task" name="new_task" id="input_task" v-model="newTask" @keyup.enter="addTask">
                                 </div>
                                 <div class="input_button">
                                     <!-- Input Add Button -->
-                                    <button class="btn btn-sm btn-success">
+                                    <button class="btn btn-sm btn-success" @click="addTask">
                                         <!-- Add Button Add Icon -->
                                         <i class="fas fa-plus"></i>
                                         <!-- Add Button Text -->
