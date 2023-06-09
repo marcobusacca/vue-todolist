@@ -49,6 +49,7 @@ createApp({
 
         // QUANDO L'UTENTE CLICCA SUL "CHECKED BUTTON", ASSEGNO ALL'ATTRIBUTO DONE DELL'ELEMENTO CLICCATO IL SUO OPPOSTO
         changeTaskDone(index){
+            // SE DONE è TRUE assegno FALSE, SE DONE è FALSE assegno TRUE
             this.tasks[index].done = !this.tasks[index].done;
         },
 

@@ -54,6 +54,7 @@ createApp({
 
         // QUANDO L'UTENTE CLICCA SUL "CHECKED BUTTON", ASSEGNO ALL'ATTRIBUTO DONE DELL'ELEMENTO CLICCATO IL SUO OPPOSTO
         changeTaskDone(index){
+            // SE DONE è TRUE assegno FALSE, SE DONE è FALSE assegno TRUE
             this.tasks[index].done = !this.tasks[index].done;
         },
 
@@ -85,6 +86,7 @@ createApp({
         editTask(index){
             // CONTROLLO CHE L'UTENTE NON ABBIA LASCIATO IL TESTO VUOTO
             if (this.tasks[index].text !== ''){
+                // SE EDIT_ENABLED è TRUE assegno FALSE, SE EDIT_ENABLED è FALSE assegno TRUE
                 this.tasks[index].editEnabled = !this.tasks[index].editEnabled;
             }
         }
